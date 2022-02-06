@@ -170,16 +170,15 @@ body {
   margin-right: auto;
 }
 .title {
-  margin: 0px;
-
+  margin: 0 auto;
   margin-bottom: 30px;
-
+  width: 696px;
   font-weight: 900;
-  text-align: center;
   font-size: 44px;
-  line-height: 1.5;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--first-title-color);
 }
 .header-btn {
@@ -335,8 +334,9 @@ img {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
-  padding-top: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   width: 370px;
@@ -695,8 +695,8 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-tool-portfolio:hover,
-.nav-tool-portfolio:focus {
+.nav-tool-portfolio:hover .masters-img-text,
+.nav-tool-portfolio:focus .masters-img-text {
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -765,6 +765,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .div-portfolio-list {
   padding-left: 24px;
   padding-bottom: 20px;
@@ -832,7 +833,6 @@ html {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms;
-  padding: 40px;
 }
 .modal-close {
   width: 30px;
@@ -852,13 +852,7 @@ html {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close-link {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -877,13 +871,4 @@ html {
 
 .modal-close:hover .modal-close-icon {
   fill: #188ce8;
-}
-.modal-title {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
 }
