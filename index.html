@@ -445,19 +445,29 @@
 </button>
 <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
 <form action="#">
+    <div class="form-field">
 <label class="input-text" for="user-name" > Имя </label>
     <input type="text" class="form-input"name="user-name"
     id="user-name"/>
-
+</div>
+<div class="form-field">
 <label class="input-text" for="user-tel"> Телефон </label>
     <input type="tel" class="form-input"name="user-tel" id="user-tel" />
-    
-    <label class="input-text" for="user-email"> Почта </label>
+    </div>
+    <div class="form-field">
+    <label class="input-text" for="user-email"> Почта</label>
     <input type="email" class="form-input"name="user-email" id="user-email" />
-   
-    <label class="input-text" for=""> Комментарий</label> 
-    <input type="text" class="form-input" name="text" placeholder="Введите текст" id="text" />
+</div>
+<div class="form-field">
+<label class="input-text" for="user-text"> Комментарий </label>
     
+   <textarea name="user-text" id="user-text" class="form-text"
+    placeholder="Введите текст"
+    ></textarea>
+</div>
+<fieldset>
+    <legend>Соглашаюсь с рассылкой и принимаю Условия договора</legend>
+</fieldset>
     <button type="submit" >Oтправить</button>
 </form>
 </div>
